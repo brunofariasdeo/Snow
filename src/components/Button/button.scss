@@ -20,31 +20,58 @@ button {
     pointer-events: none;
   }
 
-  &:hover, &:focus {
-    background-color: #AEAEAE;
-    color: #3F3F3f;
-  }
+  &.outlined {
+    background-color: unset !important;
 
-  &.outline {
-    background-color: white;
-    border: 1px solid #3D5AFE;
-    color: #3D5AFE;
-  
-    &:hover, &:focus {
-      background-color: #2962FF1A;
+    &:disabled {
+      background-color: unset !important;
     }
   }
 
   &.text {
-    background-color: unset;
+    background-color: unset !important;
+    border: none !important;
     color: #3D5AFE;
-  
-    &:hover, &:focus {
-      background: rgba(41, 98, 255, 0.1);
-    }
-  
+  }
+
+  &.outlined, &.text {
     &:disabled {
       background-color: unset !important;
+    }
+
+    &.default {
+      color: #3F3F3F;
+
+      &:hover, &:focus {
+        background: rgba(63, 63, 63, 0.1) !important;
+      }
+    }
+  
+    &.primary {
+      color: #2962FF;
+
+      &:hover, &:focus {
+        color: #2962FF;
+        background: rgba(41, 98, 255, 0.1) !important;
+      }
+    }
+    
+    &.secondary {
+      color: #455A64;
+
+      &:hover, &:focus {
+        color: #455A64;
+        background: rgba(69, 90, 100, 0.1) !important;
+      }
+    }
+    
+    &.danger {
+      color: #D32F2F;
+
+      &:hover, &:focus {
+        color: #D32F2F;
+        background: rgba(211, 47, 47, 0.1) !important;
+      }
     }
   }
 
@@ -81,33 +108,45 @@ button {
 
   &.default {
     background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+
+    &:hover, &:focus {
+      background-color: #AEAEAE;
+      color: #3F3F3f;
+    }
   }
 
   &.primary {
     background: #2962FF;
     border-radius: 6px;
     color: #FFFFFF;
+    border: 1px solid #2962FF;
 
     &:hover {
       background: #0039CB;
+      color: #FFFFFF;
     }
   }
   
   &.secondary {
     background: #455A64;
     color: #FFFFFF;
+    border: 1px solid #455A64;
   
     &:hover {
       background: #1C313A;
+      color: #FFFFFF;
     }
   }
   
   &.danger {
     background: #D32F2F;
     color: #FFFFFF;
+    border: 1px solid #D32F2F;
   
     &:hover {
       background: #9A0007;
+      color: #FFFFFF;
     }
   }
 }

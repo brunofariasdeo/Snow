@@ -17,14 +17,9 @@ Default.args = {
   label: 'Default',
 };
 
-export const Outline = Template.bind({});
-Outline.args = {
+export const Variant = Template.bind({});
+Variant.args = {
   variant: 'outline'
-};
-
-export const Text = Template.bind({});
-Text.args = {
-  variant: 'text'
 };
 
 export const DisableShadow = Template.bind({});
