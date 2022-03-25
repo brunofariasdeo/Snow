@@ -61,12 +61,14 @@ Button.propTypes = {
   ]),
 
   variant: PropTypes.oneOf([
-    "outlined",
+    "default",
+    "outline",
     "text"
   ]),
 };
 
 Button.defaultProps = {
+  color: "default",
   disableShadow: false,
   disabled: false,
   label: "Default",
