@@ -47,3 +47,8 @@ export const EndIcon = Template.bind({});
 EndIcon.args = {
   endIcon: 'local_grocery_store'
 };
+
+export const Size = Template.bind({});
+Size.args = {
+  size: "lg"
+};

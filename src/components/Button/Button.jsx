@@ -14,6 +14,7 @@ export const Button = ({
   endIcon,
   label,
   startIcon,
+  size,
   variant
 }) => {
   return (
@@ -21,6 +22,7 @@ export const Button = ({
       className={clsx(
         disableShadow ? 'disableShadow' : '',
         startIcon || endIcon ? 'with-icons' : '',
+        size,
         variant
       )}
       disabled={disabled}
@@ -42,6 +44,12 @@ Button.propTypes = {
   label: PropTypes.string,
 
   startIcon: PropTypes.string,
+
+  size: PropTypes.oneOf([
+    "sm",
+    "md",
+    "lg"
+  ]),
 
   variant: PropTypes.oneOf([
     "default",

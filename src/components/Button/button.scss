@@ -67,4 +67,19 @@ button {
     padding-right: 16px;
     width: 105px;
   }
+
+  &.sm {
+    width: 73px;
+    height: 32px;
+  }
+  
+  &.md {
+    width: 81px;
+    height: 36px;
+  }
+  
+  &.lg {
+    width: 93px;
+    height: 42px;
+  }
 }
