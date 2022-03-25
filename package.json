@@ -1,14 +1,10 @@
 {
-  "name": "intro-storybook-react-template",
+  "name": "Snow",
   "version": "0.1.0",
-  "description": "Starter template to get up and running quickly with React and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "description": "Design System example for DevChallenges.io",
+  "author": "Bruno Oliveira",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-react-template"
-  },
-  "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
   },
   "license": "MIT",
   "private": true,
