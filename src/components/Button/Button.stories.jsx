@@ -37,3 +37,13 @@ Disabled.args = {
   disabled: true,
   label: 'Disabled'
 };
+
+export const StartIcon = Template.bind({});
+StartIcon.args = {
+  startIcon: 'local_grocery_store'
+};
+
+export const EndIcon = Template.bind({});
+EndIcon.args = {
+  endIcon: 'local_grocery_store'
+};
