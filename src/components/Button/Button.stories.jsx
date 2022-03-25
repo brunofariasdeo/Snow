@@ -52,3 +52,8 @@ export const Size = Template.bind({});
 Size.args = {
   size: "lg"
 };
+
+export const Color = Template.bind({});
+Color.args = {
+  color: "default"
+};

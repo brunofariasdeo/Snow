@@ -9,6 +9,7 @@ const ICONS = {
 }
 
 export const Button = ({
+  color,
   disabled,
   disableShadow,
   endIcon,
@@ -20,6 +21,7 @@ export const Button = ({
   return (
     <button 
       className={clsx(
+        color,
         disableShadow ? 'disableShadow' : '',
         startIcon || endIcon ? 'with-icons' : '',
         size,
@@ -35,6 +37,13 @@ export const Button = ({
 }
 
 Button.propTypes = {
+  color: PropTypes.oneOf([
+    "default",
+    "primary",
+    "secondary",
+    "danger"
+  ]),
+
   disableShadow: PropTypes.bool,
 
   disabled: PropTypes.bool,
@@ -52,8 +61,8 @@ Button.propTypes = {
   ]),
 
   variant: PropTypes.oneOf([
-    "default",
-    "outlined"
+    "outlined",
+    "text"
   ]),
 };
 
