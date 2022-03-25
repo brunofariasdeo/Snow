@@ -69,6 +69,7 @@
     "@storybook/testing-library": "^0.0.9",
     "@storybook/testing-react": "^1.2.3",
     "msw": "^0.36.8",
-    "msw-storybook-addon": "^1.6.0"
+    "msw-storybook-addon": "^1.6.0",
+    "sass": "^1.49.9"
   }
 }
