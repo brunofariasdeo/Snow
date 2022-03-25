@@ -14,7 +14,7 @@ button {
   &:disabled {
     background: #E0E0E0;
     border-radius: 6px;
-    color: #9E9E9E;
+    color: #9E9E9E !important;
     pointer-events: none;
   }
 
@@ -28,4 +28,33 @@ button {
       color: #3F3F3f;
     }
   }
+
+  &.outline {
+    background-color: white;
+    border: 1px solid #3D5AFE;
+    color: #3D5AFE;
+  
+    &:hover, &:focus {
+      background-color: #2962FF1A;
+    }
+  }
+
+  &.text {
+    background-color: unset;
+    color: #3D5AFE;
+  
+    &:hover, &:focus {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  
+    &:disabled {
+      background-color: unset !important;
+    }
+  }
+
+  &.disableShadow {
+    box-shadow: none;
+  }
+
+
 }

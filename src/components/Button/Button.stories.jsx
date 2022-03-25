@@ -17,25 +17,23 @@ Default.args = {
   label: 'Default',
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
+export const Outline = Template.bind({});
+Outline.args = {
+  variant: 'outline'
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Text = Template.bind({});
+Text.args = {
+  variant: 'text'
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+export const DisableShadow = Template.bind({});
+DisableShadow.args = {
+  disableShadow: true,
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
+  label: 'Disabled'
 };
